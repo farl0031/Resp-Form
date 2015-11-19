@@ -1,0 +1,177 @@
+/* CSS Document 
+Google Fonts:
+
+
+
+Colors:
+Light: #FFEDC6;
+Dark: #7F7F7F;
+Medium: #CCBD9F;
+
+*/
+
+html
+{
+	font-size:16px;	
+	font-family:Roboto, helvetica, Impact, sans-serif;
+}
+
+#wrapper
+{
+	max-width:600px;
+	margin:auto;
+	background-color:#FFEDC6;
+	border:1px solid black;
+}
+
+#masthead
+{
+	height:5rem;
+	text-align:center;
+	background-color: #CCBD9F;
+	border:1px solid black;
+	border-bottom:2px solid black;
+}
+
+#masthead h1
+{
+	font-size:2rem;	
+	font-family:Lora, Times New Roman, serif;
+}
+
+#div_form
+{
+	width:100%;	
+}
+
+.box
+{
+	padding:0.5rem;
+	padding-left:20px;
+	width:80%;
+	max-width:300px;
+	margin:auto;
+}
+
+.box input
+{
+	width:100%;
+}
+
+/*.box input:required:focus {
+  box-shadow: 0  0 3px rgba(255,0,0,0.5); 
+}*/
+
+.box input[type=submit]
+{
+	width:5rem;
+}
+
+.box label
+{
+	display:none;
+}
+
+.clearfix:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*.box:after
+{
+	border-left: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid black;
+	border-right: 10px solid transparent;
+	width:0px;
+	height:0px;
+	position:relative;
+	top:-20px;
+	left:350px;
+	content:' ';
+	display:inline;
+}*/
+
+@media all and (min-width:600px) and (max-width:1024px)
+{
+	#wrapper
+	{
+		max-width:1024px;
+	}
+	
+	#div_form
+	{
+		padding-top:1rem;	
+	}
+	
+	.box label
+	{
+		display:inline;
+	
+	}
+	
+	.box
+	{
+		float:left;
+		padding-top:2rem;
+		width:40%;
+		max-width:500px;
+	}
+	
+	
+	
+}
+
+
+@media all and (min-width:1024px)
+{
+	#wrapper
+	{
+		max-width:1024px;
+	}
+	
+	#div_form
+	{
+		padding-top:1rem;	
+	}
+	
+	.box label
+	{
+		display:inline;
+		float:left;
+		width:20%;
+		text-align:right;
+		padding-right:0.5rem;
+	}
+	
+	.box input
+	{
+		width:75%;	
+	}
+	
+	.box
+	{
+		float:left;
+		padding-top:2rem;
+		width:40%;
+		max-width:500px;
+	}
+	
+	#div_form div:last-of-type
+	{
+		width:5rem;
+		padding-top:2.1rem
+	}
+	
+}
+
+@media all and (max-width:400px)
+{
+	#masthead h1
+	{
+		padding-top:1rem;
+		font-size:1.5rem;	
+	}
+}
